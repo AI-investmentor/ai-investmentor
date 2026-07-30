@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" width="34" height="34">
+  <rect width="34" height="34" rx="8" fill="#f0b429" />
+  <text
+    x="17"
+    y="18"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, 'Roboto Mono', monospace"
+    font-weight="700"
+    font-size="15"
+    fill="#241905"
+  >IM</text>
+</svg>

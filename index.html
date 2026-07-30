@@ -3,9 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/ai-investmentor/favicon.svg" />
     <title>InvestMentor AI</title>
-    <script type="module" crossorigin src="/ai-investmentor/assets/index-Dsue07Pd.js"></script>
-    <link rel="stylesheet" crossorigin href="/ai-investmentor/assets/index-BhN9Pmc1.css">
+    <script>
+      // 리액트가 마운트되기 전에 저장된 테마를 먼저 적용 — 안 그러면 항상 다크로 그렸다가
+      // useEffect에서 라이트로 바뀌는 깜빡임(FOUC)이 생긴다.
+      (function () {
+        try {
+          var saved = localStorage.getItem("im_theme");
+          if (saved === "light") document.documentElement.setAttribute("data-theme", "light");
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/ai-investmentor/assets/index-FPgVV8cm.js"></script>
+    <link rel="stylesheet" crossorigin href="/ai-investmentor/assets/index-BPtCxKQW.css">
   </head>
   <body>
     <div id="root"></div>
